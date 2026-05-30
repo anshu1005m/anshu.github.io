@@ -454,8 +454,9 @@
       </div>
 
       <div class="success-msg" id="successMsg">
-        <h3>🎉 Order Received!</h3>
-        <p>Thank you! We'll verify your payment and send the bundle to your email within <strong>30 minutes</strong>. Check your spam folder too.</p>
+        <h3>🎉 Payment Done! One Last Step</h3>
+        <p>Please fill your details in the form opening now so we can send your bundle. If it didn't open, <a href="https://forms.gle/oPNXfM8dV5KYF2Gg8" target="_blank" style="color:var(--success); font-weight:500;">click here</a>.</p>
+        <p style="margin-top:8px; font-size:12px;">You will receive your bundle on email within <strong>30 minutes</strong> ✅</p>
       </div>
 
     </div>
@@ -504,6 +505,10 @@
 
     document.getElementById('orderForm').style.display = 'none';
     document.getElementById('successMsg').style.display = 'block';
+
+    setTimeout(() => {
+      window.open('https://forms.gle/oPNXfM8dV5KYF2Gg8', '_blank');
+    }, 1500);
   }
 </script>
 
